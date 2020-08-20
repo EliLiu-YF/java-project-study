@@ -76,15 +76,15 @@ public class Test {
         if (file.exists()) {
             file.delete();
         }
-        File file1 = new File("aaa");
+        File file1 = new File("aaa.txt");
         System.out.println(file1.getAbsolutePath());
         System.out.println(file1.exists());
         if (file1.exists()) {
             file1.delete();
         }
-//        File file3 = new File("aaa");
+//        File file3 = new File("aaa.txt");
 //        file3.mkdir();
-//        File file4 = new File("aaa/a.txt");
+//        File file4 = new File("aaa.txt/a.txt");
 //        try {
 //            file4.createNewFile();
 //        } catch (IOException e) {

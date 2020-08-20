@@ -28,7 +28,7 @@ public class Penguin {
         //常量值是固定不变的,不能重新赋值
 //        final int b = 1;
         //当定义引用类型为常量时,不能重新指向另一块地址,但是可以改变其中的属性值
-//        penguin.name = "aaa";
+//        penguin.name = "aaa.txt";
 //        penguin = new Penguin();
         penguin.sex = Penguin.SEX_MALE;
         penguin.show();

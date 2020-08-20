@@ -34,7 +34,7 @@ public class Test {
         System.out.println(stringBuilder);
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         System.out.println(stringBuilder);
-        stringBuilder.replace(0, 2, "aaa");
+        stringBuilder.replace(0, 2, "aaa.txt");
         System.out.println(stringBuilder);
     }
 

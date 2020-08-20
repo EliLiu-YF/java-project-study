@@ -4,7 +4,7 @@ public class Dog {
     public static final String a;
     //静态代码块 ,用来完成静态常量属性的初始化
     static {
-        a = "aaa";
+        a = "aaa.txt";
     }
 
     //宠物狗的名字

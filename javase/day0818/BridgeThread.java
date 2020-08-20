@@ -9,16 +9,16 @@ public class BridgeThread extends Thread{
 
     @Override
     public void run() {
-            synchronized (bridge){
-                System.out.println(this.getId()+","+bridge.CrossBridge());
-                try {
-                    sleep(1000);
-                    bridge.notify();
-                    bridge.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        synchronized (bridge) {
+            System.out.println(this.getId() + "," + bridge.CrossBridge());
+            try {
+                sleep(1000);
+//                    bridge.notify();
+//                    bridge.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+        }
     }
 
     public static void main(String[] args) {
