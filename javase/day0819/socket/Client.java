@@ -9,13 +9,13 @@ public class Client {
     static void exp(){
         try {
             //模拟10个客户端
-            for (int i = 0; i < 10; i++) {
+//            for (int i = 0; i < 10; i++) {
                 Socket socket = new Socket("localhost",8888);
                 ClientWriteThread writeThread = new ClientWriteThread(socket);
                 writeThread.start();
                 ClientReadThread readThread = new ClientReadThread(socket);
                 readThread.start();
-            }
+//            }
         } catch (IOException e) {
             e.printStackTrace();
         }
